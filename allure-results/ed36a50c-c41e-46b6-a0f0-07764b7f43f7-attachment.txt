@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_02_pizza_option.py:87 Удаляем товар
+[32mINFO    [0m root:test_02_pizza_option.py:91 Статус после удаления: Корзина пуста.
+[32mINFO    [0m root:browser.py:48 Браузер chrome закрылся
