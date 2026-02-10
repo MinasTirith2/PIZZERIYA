@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_02_pizza_option.py:22 Выбрана пицца: ПИЦЦА «4 В 1»
-[32mINFO    [0m root:test_02_pizza_option.py:31 Успешный переход в карточку: ПИЦЦА «4 В 1»

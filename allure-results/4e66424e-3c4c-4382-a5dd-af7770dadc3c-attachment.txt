@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_06_promokod.py:146 Купон GIVEMEHALYAVA применён
-[32mINFO    [0m root:test_06_promokod.py:151 До применения: 780.0, После: 702.0

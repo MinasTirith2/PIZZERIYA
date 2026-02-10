@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_07_server.py:58 Эмуляция падения сервера активирована
-[33mWARNING [0m root:test_07_server.py:69 Сообщение об ошибке не появилось, проверяем сумму
-[32mINFO    [0m root:test_07_server.py:74 Тест пройден: цена осталась прежней (1560.0)
-[32mINFO    [0m root:browser.py:48 Браузер chrome закрылся

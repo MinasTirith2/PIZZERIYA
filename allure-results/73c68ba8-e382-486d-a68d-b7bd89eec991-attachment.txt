@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_01_forms.py:81 Успешный переход. Текущий URL: https://pizzeria.skillbox.cc/cart/
-[32mINFO    [0m root:browser.py:48 Браузер chrome закрылся

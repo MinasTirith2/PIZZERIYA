@@ -1,1 +1,0 @@
-[32mINFO    [0m root:test_02_pizza_option.py:61 Цена с колбасным бортом: 500,00

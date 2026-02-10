@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_06_promokod.py:51 Купон GIVEMEHALYAVA применён
-[32mINFO    [0m root:test_06_promokod.py:60 До скидки: 2340.0, После: 2106.0, Ожидали: 2106.0
-[32mINFO    [0m root:test_06_promokod.py:94 Заказ успешно оформлен
-[32mINFO    [0m root:test_06_promokod.py:113 Пользователь разлогинен и перенаправлен на главную
