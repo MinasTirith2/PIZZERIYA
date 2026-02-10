@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_05_sign_up.py:121 Результат заказа: Спасибо! Ваш заказ был получен.
+[32mINFO    [0m root:browser.py:48 Браузер chrome закрылся

@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_03_filter.py:37 Начальная макс. цена (только цифры): 190
+[32mINFO    [0m root:test_03_filter.py:45 Цель достигнута: 140
+[32mINFO    [0m root:test_03_filter.py:59 Проверка цены товара: 115.0
+[32mINFO    [0m root:test_03_filter.py:59 Проверка цены товара: 135.0
+[32mINFO    [0m root:browser.py:48 Браузер chrome закрылся
