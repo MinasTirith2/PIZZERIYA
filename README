@@ -35,8 +35,7 @@
 Убедитесь, что у вас установлен Python 3.11. Клонируйте репозиторий:
 
 ```bash
-git clone [https://github.com/MinasTirith2/pizzeria.git]
-(https://github.com/MinasTirith2/pizzeriya.git)
+git clone [(https://github.com/MinasTirith2/pizzeriya.git)
 cd pizzeria
 
 2. Установка зависимостей
