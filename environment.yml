@@ -1,0 +1,14 @@
+name: almat2
+channels:
+  - defaults
+dependencies:
+  - pip=25.3=pyhc872135_0
+  - python=3.11.14=h981015d_0
+  - pytest
+  - pip:
+      - numpy==2.4.1
+      - selenium==4.39.0
+      - flake8
+      - pytest-playwright
+
+prefix: C:\Users\AL HP Laptop\miniconda3\envs\almat2
