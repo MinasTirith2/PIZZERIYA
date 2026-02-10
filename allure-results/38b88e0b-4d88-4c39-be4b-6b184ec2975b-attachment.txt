@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_06_promokod.py:162 Предыдущий купон успешно удален
-[32mINFO    [0m root:test_06_promokod.py:174 Купон DC120 введён
-[32mINFO    [0m root:test_06_promokod.py:183 Получена ошибка: Неверный купон.
-[32mINFO    [0m root:browser.py:48 Браузер chrome закрылся

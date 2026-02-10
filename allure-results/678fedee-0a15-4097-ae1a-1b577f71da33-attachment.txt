@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_04_sign_in.py:36 Ссылка на вход найдена: Авторизуйтесь
-[32mINFO    [0m root:browser.py:48 Браузер chrome закрылся

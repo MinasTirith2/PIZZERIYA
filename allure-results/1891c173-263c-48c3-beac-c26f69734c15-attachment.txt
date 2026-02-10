@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_02_pizza_option.py:72 Переход в корзину
-[32mINFO    [0m root:test_02_pizza_option.py:79 Наш товар в корзине
