@@ -3,9 +3,9 @@ from selenium.common import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 import allure
 import pytest
-import time
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+
+from pages.bonus_page import BonusPage
 
 
 @allure.feature("Бонусная программа")
@@ -16,27 +16,27 @@ class TestPromoCod:
     def setup(self, open_main_page):
         self.driver = open_main_page
 
-    @allure.title("Кейс 20: Бонусная программа")
-    def test_bonus(self):
-        with (allure.step("Переходим на страницу бонусной программы")):
+    @allure.title("Кейс 20: Бонусная программа — проверка формата телефона")
+    def test_bonus_phone_validation(self):
+        bonus_page = BonusPage(self.driver)
+
+        with allure.step("Переход на страницу бонусов"):
             self.driver.get("https://pizzeria.skillbox.cc/bonus/")
-            time.sleep(1)
-        with (allure.step("Заполняем поля валидными данными")):
-            self.driver.find_element(By.NAME, "username").send_keys("Dmitryi")
-            self.driver.find_element(By.NAME, "billing_phone").send_keys("77758867986")
-            self.driver.find_element(By.NAME, "bonus").click()
+
+        with allure.step("Заполнение данных"):
+            bonus_page.fill_bonus_form("Dmitryi", "77758867986")
+
+        with allure.step("Проверка результата"):
             try:
                 WebDriverWait(self.driver, 5).until(EC.alert_is_present())
                 alert = self.driver.switch_to.alert
-                logging.info(f"Вижу алерт: {alert.text}")
+                alert_text = alert.text
                 alert.accept()
+                logging.info(f"Алерт обработан: {alert_text}")
+
+                assert "Заявка отправлена" in alert_text
+
             except TimeoutException:
-                logging.warning("Алерт не появился, идем дальше")
-        with allure.step("Проверка валидации"):
-            errors = self.driver.find_elements(By.ID, "bonus_content")
-            if len(errors) > 0 and "Введен неверный формат телефона" in errors[0].text:
-                error_msg = errors[0].text
-                logging.error(f"Тест упал на валидации: {error_msg}")
-                pytest.fail(f"Валидация не пройдена: {error_msg}")
-            else:
-                logging.info("Ошибок валидации не обнаружено, продолжаем...")
+                logging.info("Алерт не появился, проверяем текст на странице")
+                message = bonus_page.get_result_message()
+                assert "Введен неверный формат телефона" not in message

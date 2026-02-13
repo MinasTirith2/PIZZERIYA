@@ -1,5 +1,7 @@
 import logging
 import logging.config
+import time
+
 import pytest
 from allure_commons._allure import step
 from selenium.webdriver import Remote
@@ -57,3 +59,15 @@ def open_main_page(selenium):
     selenium.execute_script("window.sessionStorage.clear();")
     selenium.refresh()
     return selenium
+
+@pytest.fixture(scope="class")
+def user_data():
+    """Фикстура для генерации уникальных данных пользователя на уровне класса."""
+    timestamp = int(time.time())
+    return {
+        "login": f"R{timestamp}",
+        "email": f"{timestamp}@t.co",
+        "pass": "123456",
+        "first_name": f"Имя{timestamp % 1000}",
+        "last_name": f"Фамилия{timestamp % 1000}"
+    }
